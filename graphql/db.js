@@ -1,4 +1,4 @@
-const Movies = [
+export const movies = [
     {
         id: 1,
         name: "Avengers - End Game",
@@ -30,6 +30,13 @@ const Movies = [
         company: "Sony"
     }
 ];
+
+export const getMovies = () => movies;
+
+export const getById = id => {
+    const filteredMovies = movies.filter( movie=> movie.id === id);
+    return filteredMovies[0]
+}
 
 
 

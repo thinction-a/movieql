@@ -1,3 +1,19 @@
+type Movie {
+    id: Int!
+    name: String!
+    score: Int!
+    company: String!
+}
+
+type Query {
+    movies: [Movie]!
+    movie(id: Int!): Movie
+}
+
+
+
+
+
 type Person {
     id: Int!
     name: String!

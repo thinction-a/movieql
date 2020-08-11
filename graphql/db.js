@@ -1,30 +1,30 @@
 let movies = [
     {
-        id: 0,
+        id: 1,
         name: "Avengers - End Game",
         score: 99,
         company: "Marvel Studio"
     },
     {
-        id: 1,
+        id: 2,
         name: "Ironman",
         score: 95,
         company: "Marvel Studio"
     },
     {
-        id: 2,
+        id: 3,
         name: "parasite",
         score: 90,
         company: "Junho Bong"
     },
     {
-        id: 3,
+        id: 4,
         name: "MadMax, Fury Road",
         score: 80,
         company: "20th Fox"
     },
     {
-        id: 4,
+        id: 5,
         name: "SpierMan",
         score: 75,
         company: "Sony"

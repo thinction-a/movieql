@@ -22,7 +22,7 @@ type Movie {
 }
 
 type Query {
-    movies(limit: Int, rating: Float, sort_by: String!): [Movie]!
+    movies(limit: Int, rating: Float, sort_by: String): [Movie]!
 }
 
 # type Movie {

@@ -1,20 +1,47 @@
+# type Game {
+#     video_id: String!
+#     title: String!
+#     date: String!
+#     thumbnail: String!
+#     channelTitle: String!
+#     url: String!
+# }
+
+# type Query {
+#     games: [Game]!
+# }
+
 type Movie {
     id: Int!
-    name: String!
-    score: Int!
-    company: String!
+    title: String!
+    rating: Float!
+    summary: String!
+    language: String!
+    medium_cover_image: String!
+    year: Int!
 }
 
 type Query {
-    movies: [Movie]!
-    movie(id: Int!): Movie
-    movieName(name: String!): Movie
+    movies(limit: Int, rating: Float, sort_by: String!): [Movie]!
 }
 
-type Mutation {
-    addMovie(name: String!, score: Int!, company: String!): Movie!
-    deleteMovie(id: Int!): Boolean!
-}
+# type Movie {
+#     id: Int!
+#     name: String!
+#     score: Int!
+#     company: String!
+# }
+
+# type Query {
+#     movies: [Movie]!
+#     movie(id: Int!): Movie
+#     movieName(name: String!): Movie
+# }
+
+# type Mutation {
+#     addMovie(name: String!, score: Int!, company: String!): Movie!
+#     deleteMovie(id: Int!): Boolean!
+# }
 
 
 
